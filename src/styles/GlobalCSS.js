@@ -1,33 +1,35 @@
 import { createGlobalStyle } from "styled-components";
-import NerkoOne from "../fonts/nerko-one-v5-latin-regular.woff";
-import Sansita from "../fonts/sansita-v5-latin-regular.woff";
-import Pacifico from "../fonts/pacifico-v17-latin-regular.woff";
+import OpenSans from "../fonts/open-sans.woff";
+import Butler from "../fonts/Butler.woff";
+import Joane from "../fonts/Joane-Bold.woff";
+
 import breakpoints from "./breakpoints";
 
 const GlobalCSS = createGlobalStyle`
   @font-face {
-    font-family: 'NerkoOne';
-    src: url(${NerkoOne}) format('woff');
+    font-family: 'Joane';
+    src: url(${Joane}) format('woff');
   }
 
   @font-face {
-    font-family: 'Sansita';
-    src: url(${Sansita}) format('woff');
+    font-family: 'Open Sans';
+    src: url(${OpenSans}) format('woff');
   }
 
   @font-face {
-    font-family: 'Pacifico';
-    src: url(${Pacifico}) format('woff');
+    font-family: 'Butler';
+    src: url(${Butler}) format('woff');
   }
 
   body {
-    font-family: "Sansita", sans-serif;
+    font-family: "Open Sans", Verdana, sans-serif;
     max-width: 1530px;
     margin: 0 auto;
+    color: black;
   }
 
   h1 {
-    font-family: 'NerkoOne', cursive;
+    font-family: 'Butler', cursive;
     font-size: 4.4rem;
     word-break: break-word;
 
@@ -37,7 +39,7 @@ const GlobalCSS = createGlobalStyle`
   }
 
   h2 {
-    font-family: 'NerkoOne', cursive;
+    font-family: 'Butler', cursive;
     font-size: 4rem;
   }
 `;

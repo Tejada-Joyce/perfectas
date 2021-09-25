@@ -2,6 +2,7 @@ import * as React from "react";
 // import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import TopNav from "./TopNav";
+import Footer from "./Footer";
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -12,6 +13,7 @@ const Layout = ({ pageTitle, children }) => {
         <h1>{pageTitle}</h1>
         {children}
       </main>
+      <Footer />
     </div>
   );
 };

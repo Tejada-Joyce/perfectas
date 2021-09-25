@@ -1,6 +1,8 @@
 const size = {
-  sm: "660px",
-  lg: "1150px",
+  // sm: "660px",
+  sm: "576px",
+  // lg: "1150px",
+  lg: "768px",
 };
 const device = {
   sm: `(min-width: ${size.sm})`,
