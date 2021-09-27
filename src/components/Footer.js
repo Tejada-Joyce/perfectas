@@ -64,7 +64,7 @@ const Footer = () => {
             icon="instagram"
             iconColor="#ff9c9d"
             backgroundColor="white"
-            url="https://www.facebook.com/PercfetasEA"
+            url="https://www.instagram.com/perfectas.esteticaavanzada/"
             size="35"
             roundness="50%"
           />
@@ -73,7 +73,7 @@ const Footer = () => {
             icon="messenger"
             iconColor="#ff9c9d"
             backgroundColor="white"
-            url="https://www.facebook.com/PercfetasEA"
+            url="http://m.me/PercfetasEA"
             size="35"
             roundness="50%"
           />
@@ -88,7 +88,9 @@ const Footer = () => {
       </ContactInfoContainer>
       <div style={{ minWidth: "90%" }}>
         <p>Calle Antiquilla 319 Yanahuara 51, Arequipa, Peru</p>
-        <p style={{ fontStyle: "italic" }}>&copy; Copyright Perfectas 2021</p>
+        <p style={{ fontStyle: "italic" }}>
+          &copy; {new Date().getFullYear()} Copyright Perfectas{" "}
+        </p>
       </div>
     </FooterContainer>
   );
