@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import breakpoints from "../styles/breakpoints";
 import name from "../images/name.jpg";
+import { Button } from "../constants/constants-styled";
 
 const Header = styled.header`
   display: grid;
@@ -29,34 +30,6 @@ const Image = styled.img`
   @media only screen and ${breakpoints.device.lg} {
     width: 30%;
   }
-`;
-
-const Button = styled.button`
-  background: #f6afb0;
-  border: 2px solid #f6afb0;
-  color: #000000;
-  padding: 0.5em 1em;
-  text-align: center;
-  grid-column: 3;
-  grid-row: 1;
-  display: block;
-
-  @media only screen and ${breakpoints.device.sm} {
-    margin-right: 8%;
-  }
-
-  ${(props) =>
-    props.primary &&
-    css`
-      display: none;
-      color: black;
-      outline: none;
-      text-decoration: none;
-      @media only screen and ${breakpoints.device.sm} {
-        display: block;
-        place-self: center end;
-      }
-    `}
 `;
 
 const Container = styled.div`

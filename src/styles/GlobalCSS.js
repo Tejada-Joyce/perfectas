@@ -46,6 +46,12 @@ const GlobalCSS = createGlobalStyle`
   a:hover {
     color: black;
   }
+
+  h3 {
+    font-family: 'Butler', cursive;
+    font-size: 2.5rem;
+  }
+   
 `;
 
 export default GlobalCSS;

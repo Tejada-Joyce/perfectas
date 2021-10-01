@@ -8,10 +8,7 @@ const Layout = ({ pageTitle, children }) => {
     <div>
       <title>{pageTitle}</title>
       <TopNav />
-      <main>
-        <h1>{pageTitle}</h1>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   );
