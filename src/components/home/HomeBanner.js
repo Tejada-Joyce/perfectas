@@ -1,8 +1,8 @@
-import banner_home_image_url from "../images/spa-banner.jpg";
+import banner_home_image_url from "../../images/spa-banner.jpg";
 import styled, { css } from "styled-components";
-import breakpoints from "../styles/breakpoints";
+import breakpoints from "../../styles/breakpoints";
 import * as React from "react";
-import { Button } from "../constants/constants-styled";
+import { Button } from "../../constants/constants-styled";
 
 const Container = styled.div`
   height: 65vh;

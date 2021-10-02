@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import styled, { css } from "styled-components";
-import breakpoints from "../styles/breakpoints";
+import breakpoints from "../../styles/breakpoints";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import { SocialIcon } from "react-social-icons";
 

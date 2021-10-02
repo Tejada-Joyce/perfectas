@@ -2,9 +2,9 @@ import * as React from "react";
 import styled, { css } from "styled-components";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import breakpoints from "../styles/breakpoints";
-import name from "../images/name.jpg";
-import { Button } from "../constants/constants-styled";
+import breakpoints from "../../styles/breakpoints";
+import name from "../../images/name.jpg";
+import { Button } from "../../constants/constants-styled";
 
 const Header = styled.header`
   display: grid;
