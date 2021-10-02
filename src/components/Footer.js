@@ -86,7 +86,7 @@ const Footer = () => {
           />
         </SocialMediaCont>
       </ContactInfoContainer>
-      <div style={{ minWidth: "90%" }}>
+      <div style={{ minWidth: "80%" }}>
         <p>Calle Antiquilla 319 Yanahuara 51, Arequipa, Peru</p>
         <p style={{ fontStyle: "italic" }}>
           &copy; {new Date().getFullYear()} Copyright Perfectas{" "}

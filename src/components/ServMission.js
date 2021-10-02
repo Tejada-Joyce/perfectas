@@ -38,27 +38,27 @@ const Image = styled.img`
 `;
 
 const MissionStatement = styled.h4`
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: black;
   line-height: 1.2;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+
   @media only screen and ${breakpoints.device.sm} {
-    width: 65%;
+    width: 60%;
     font-size: 2rem;
-    line-height: 1.6;
+    line-height: 1.4;
+  }
+  @media only screen and ${breakpoints.device.lg} {
+    width: 45%;
   }
 `;
 
 const MissionContainer = styled.div`
-  width: 80%;
   text-align: center;
-  margin: 20px auto;
-  @media only screen and ${breakpoints.device.sm} {
-    width: 65%;
-  }
-  @media only screen and ${breakpoints.device.lg} {
-    width: 47%;
-  }
+  margin: 35px auto;
 `;
 
 const Mission = () => {
