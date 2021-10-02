@@ -7,15 +7,19 @@ const Button = styled.button`
   color: #000000;
   padding: 0.5em 1em;
   text-align: center;
-  grid-column: 3;
-  grid-row: 1;
   display: block;
   text-decoration: none;
+  font-weight: 550;
+  font-size: 19px;
 
   &:hover {
     color: white;
     background: #ff5e61;
     border: 2px solid #ff5e61;
+  }
+
+  @media only screen and ${breakpoints.device.sm} {
+    width: 80%;
   }
 
   ${(props) =>
@@ -24,10 +28,13 @@ const Button = styled.button`
       display: none;
       color: black;
       outline: none;
+      grid-column: 3;
+      grid-row: 1;
       @media only screen and ${breakpoints.device.sm} {
         display: block;
         place-self: center end;
         margin-right: 8%;
+        width: auto;
       }
     `}
 
@@ -36,7 +43,6 @@ const Button = styled.button`
     css`
       @media only screen and ${breakpoints.device.sm} {
         width: 80%;
-        display: block;
         margin: 0 auto;
       }
     `}

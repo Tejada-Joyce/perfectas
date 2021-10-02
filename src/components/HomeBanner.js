@@ -1,5 +1,4 @@
 import banner_home_image_url from "../images/spa-banner.jpg";
-
 import styled, { css } from "styled-components";
 import breakpoints from "../styles/breakpoints";
 import * as React from "react";
@@ -35,7 +34,7 @@ const HeroStuff = styled.div`
   @media only screen and ${breakpoints.device.sm} {
     top: 25%;
     width: 40%;
-    left: 40px;
+    // left: 40px;
   }
   @media only screen and ${breakpoints.device.lg} {
     top: 30%;
@@ -45,13 +44,6 @@ const HeroStuff = styled.div`
 const HomeBanner = () => {
   return (
     <Container>
-      {/* <Banner src={banner_home_image_url} alt="Home page banner" />
-      <div className="hero-stuff">
-        <h1>Donde la Exclusividad Eres Tú</h1>
-        <Button primary as="a" href="/contactus">
-          Haz una Cita
-        </Button>
-      </div> */}
       <Hero />
       <HeroStuff>
         <h3>Donde la Exclusividad Eres Tú</h3>
