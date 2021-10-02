@@ -29,6 +29,7 @@ const Image = styled.img`
 
   @media only screen and ${breakpoints.device.lg} {
     width: 30%;
+    margin-down: 10px;
   }
 `;
 

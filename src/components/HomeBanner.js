@@ -13,7 +13,8 @@ const Container = styled.div`
   margin-top: 15px;
 
   @media only screen and ${breakpoints.device.sm} {
-    margin-top: 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -34,7 +35,6 @@ const HeroStuff = styled.div`
   @media only screen and ${breakpoints.device.sm} {
     top: 25%;
     width: 40%;
-    // left: 40px;
   }
   @media only screen and ${breakpoints.device.lg} {
     top: 30%;

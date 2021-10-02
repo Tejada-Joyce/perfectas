@@ -10,8 +10,11 @@ const Container = styled.div`
   justify-items: center;
   align-items: center;
   row-gap: 30px;
+  padding: 25px 0 15px;
+
   @media only screen and ${breakpoints.device.sm} {
     grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
   }
 `;
 
@@ -61,23 +64,6 @@ const MissionContainer = styled.div`
   margin: 35px auto;
 `;
 
-const Mission = () => {
-  return (
-    <div
-      style={{ background: "#f6f7f9", padding: "20px 0", marginTop: "20px" }}
-    >
-      <MissionContainer>
-        <h6>NUESTRA MISIÓN</h6>
-        <MissionStatement>
-          We believe taking action towards sustainability and social justice is
-          important for the beauty industry. From recycling to respectful open
-          conversations.
-        </MissionStatement>
-      </MissionContainer>
-    </div>
-  );
-};
-
 const Services = () => {
   return (
     <Container>
@@ -99,6 +85,23 @@ const Services = () => {
         <Image src={makeup} alt="Girl Makeup" roundedCircle />
       </ImageContainer>
     </Container>
+  );
+};
+
+const Mission = () => {
+  return (
+    <div
+      style={{ background: "#f6f7f9", padding: "20px 0", marginTop: "20px" }}
+    >
+      <MissionContainer>
+        <h6>NUESTRA MISIÓN</h6>
+        <MissionStatement>
+          We believe taking action towards sustainability and social justice is
+          important for the beauty industry. From recycling to respectful open
+          conversations.
+        </MissionStatement>
+      </MissionContainer>
+    </div>
   );
 };
 
