@@ -28,8 +28,12 @@ const GlobalCSS = createGlobalStyle`
     color: black;
   }
 
-  h1 {
+  h1, h2, h3, h4, h6 {
     font-family: 'Butler', cursive;
+    color: black;
+  }
+
+  h1 {
     font-size: 4.4rem;
     word-break: break-word;
 
@@ -39,7 +43,6 @@ const GlobalCSS = createGlobalStyle`
   }
 
   h2 {
-    font-family: 'Butler', cursive;
     font-size: 4rem;
   }
 
@@ -48,8 +51,13 @@ const GlobalCSS = createGlobalStyle`
   }
 
   h3 {
-    font-family: 'Butler', cursive;
     font-size: 2.5rem;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+    color: #27301D;
+    font-weight: bold;
   }
    
 `;

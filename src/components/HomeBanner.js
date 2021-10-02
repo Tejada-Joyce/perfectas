@@ -5,7 +5,7 @@ import * as React from "react";
 import { Button } from "../constants/constants-styled";
 
 const Container = styled.div`
-  height: 60vh;
+  height: 65vh;
   width: 100%;
   overflow: hidden;
   position: relative;

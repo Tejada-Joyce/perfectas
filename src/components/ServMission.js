@@ -37,15 +37,43 @@ const Image = styled.img`
   width: 100%;
 `;
 
+const MissionStatement = styled.h4`
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  line-height: 1.2;
+  @media only screen and ${breakpoints.device.sm} {
+    width: 65%;
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+`;
+
+const MissionContainer = styled.div`
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+  @media only screen and ${breakpoints.device.sm} {
+    width: 65%;
+  }
+  @media only screen and ${breakpoints.device.lg} {
+    width: 47%;
+  }
+`;
+
 const Mission = () => {
   return (
-    <div>
-      <h6>NUESTRA MISIÓN</h6>
-      <p>
-        We believe taking action towards sustainability and social justice is
-        important for the beauty industry. From recycling to respectful open
-        conversations.
-      </p>
+    <div
+      style={{ background: "#f6f7f9", padding: "20px 0", marginTop: "20px" }}
+    >
+      <MissionContainer>
+        <h6>NUESTRA MISIÓN</h6>
+        <MissionStatement>
+          We believe taking action towards sustainability and social justice is
+          important for the beauty industry. From recycling to respectful open
+          conversations.
+        </MissionStatement>
+      </MissionContainer>
     </div>
   );
 };
@@ -74,4 +102,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export { Services, Mission };
