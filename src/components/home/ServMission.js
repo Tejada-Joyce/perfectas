@@ -41,18 +41,20 @@ const Image = styled.img`
 `;
 
 const MissionStatement = styled.h4`
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: black;
   line-height: 1.2;
   display: block;
-  margin: 0 auto;
+  margin: 17px auto 0;
   width: 80%;
+  letter-spacing: 1px;
 
   @media only screen and ${breakpoints.device.sm} {
     width: 60%;
     font-size: 2rem;
     line-height: 1.4;
+    letter-spacing: 0.5px;
   }
   @media only screen and ${breakpoints.device.lg} {
     width: 45%;
@@ -94,7 +96,7 @@ const Mission = () => {
       style={{ background: "#f6f7f9", padding: "20px 0", marginTop: "20px" }}
     >
       <MissionContainer>
-        <h6>NUESTRA MISIÓN</h6>
+        <h5>NUESTRA MISIÓN</h5>
         <MissionStatement>
           We believe taking action towards sustainability and social justice is
           important for the beauty industry. From recycling to respectful open

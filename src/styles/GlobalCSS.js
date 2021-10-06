@@ -28,7 +28,7 @@ const GlobalCSS = createGlobalStyle`
     color: black;
   }
 
-  h1, h2, h3, h4, h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'Butler', cursive;
     color: black;
   }
@@ -54,10 +54,21 @@ const GlobalCSS = createGlobalStyle`
     font-size: 2.5rem;
   }
 
-  h6 {
+  h5 {
     font-size: 1.2rem;
     color: #27301D;
     font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+    color: #27301D;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    @media only screen and ${breakpoints.device.sm} {
+      font-size: 1rem;      
+    }
   }
    
 `;

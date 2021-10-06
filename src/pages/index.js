@@ -6,6 +6,7 @@ import HomeBanner from "../components/home/HomeBanner";
 import { Services } from "../components/home/ServMission";
 import { Mission } from "../components/home/ServMission";
 import Testimonials from "../components/home/Testimonials";
+// import Location from "../components/home/Location";
 
 const IndexPage = () => {
   return (
@@ -16,6 +17,7 @@ const IndexPage = () => {
         <Services />
         <Mission />
         <Testimonials />
+        {/* <Location /> */}
         <p>I'm making this by following the Gatsby Tutorial.</p>
       </Layout>
     </div>
