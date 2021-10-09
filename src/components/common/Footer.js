@@ -77,13 +77,22 @@ const Footer = () => {
             size="35"
             roundness="50%"
           />
-          <SocialIcon
+          <SocialMediaIconsReact
+            borderColor="#f6afb0"
+            icon="whatsapp"
+            iconColor="#ff9c9d"
+            backgroundColor="white"
+            url="http://m.me/PercfetasEA"
+            size="35"
+            roundness="50%"
+          />
+          {/* <SocialIcon
             url="https://api.whatsapp.com/send?phone=51988583553&app=facebook&entry_point=page_cta&fbclid=IwAR02hRM0ARHt8TBHIThyERP6Haaqt3brvrKVVf_ih_4EQEYu_A3ZL_iG9wA"
             bgColor="white"
             fgColor="#ff9c9d"
             style={{ height: 33, width: 33 }}
             target={"_blank"}
-          />
+          /> */}
         </SocialMediaCont>
       </ContactInfoContainer>
       <div style={{ minWidth: "80%" }}>

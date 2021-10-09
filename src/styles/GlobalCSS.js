@@ -46,12 +46,22 @@ const GlobalCSS = createGlobalStyle`
     font-size: 4rem;
   }
 
+  a {
+    text-decoration: none;
+    color: black;
+
+  }
+
   a:hover {
     color: black;
   }
 
   h3 {
     font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
   }
 
   h5 {
@@ -69,6 +79,10 @@ const GlobalCSS = createGlobalStyle`
     @media only screen and ${breakpoints.device.sm} {
       font-size: 1rem;      
     }
+
+  li{
+     font-size: 1rem;
+   }
   }
    
 `;

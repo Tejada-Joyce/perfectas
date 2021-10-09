@@ -18,7 +18,6 @@ const IndexPage = () => {
         <Mission />
         <Testimonials />
         <Location />
-        <p>I'm making this by following the Gatsby Tutorial.</p>
       </Layout>
     </div>
   );
