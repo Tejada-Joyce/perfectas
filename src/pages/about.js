@@ -3,6 +3,7 @@ import Layout from "../components/common/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GlobalCSS from "../styles/GlobalCSS.js";
 import Banner from "../components/about/Banner";
+import Promise from "../components/about/Promise";
 
 const AboutPage = () => {
   return (
@@ -10,7 +11,7 @@ const AboutPage = () => {
       <GlobalCSS />
       <Layout pageTitle="Sobre Nosotras">
         <Banner />
-        <h1>Sobre Nosotras</h1>
+        <Promise />
       </Layout>
     </div>
   );

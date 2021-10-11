@@ -51,13 +51,13 @@ const HeroStuff = styled.div`
     top: 10%;
     width: 40%;
     height: 80%;
-    left: 10%;
+    left: 5%;
   }
   @media only screen and ${breakpoints.device.lg} {
     top: 20%;
-    width: 35%;
+    width: 36%;
     height: 60%;
-    left: 15%;
+    left: 12%;
   }
 `;
 
@@ -67,7 +67,7 @@ const MissionStatement = styled.h4`
   color: black;
   line-height: 1.2;
   display: block;
-  margin: 17px auto;
+  margin: 17px auto 0;
   width: 100%;
   letter-spacing: 1px;
 
