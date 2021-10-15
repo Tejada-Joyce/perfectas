@@ -52,6 +52,11 @@ const GlobalCSS = createGlobalStyle`
 
   }
 
+  .active {
+    background: #f6afb0;
+    
+  };
+
   a:hover {
     color: black;
   }
@@ -62,6 +67,13 @@ const GlobalCSS = createGlobalStyle`
 
   h4 {
     font-size: 2rem;
+  }
+
+  h4.about {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 0.9px;
   }
 
   h5 {

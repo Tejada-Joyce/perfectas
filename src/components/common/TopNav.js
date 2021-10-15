@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import breakpoints from "../../styles/breakpoints";
 import name from "../../images/name.jpg";
 import { Button } from "../../constants/constants-styled";
+import { Link } from "gatsby";
 
 const Header = styled.header`
   display: grid;
@@ -49,6 +50,41 @@ const navLinkStyle = {
   color: "black",
   letterSpacing: "1px",
   textAlign: "center",
+  padding: "10px",
+};
+
+const menuLinks = [
+  {
+    to: "/",
+    children: "INICIO",
+  },
+  {
+    to: "/about",
+    children: "SOBRE NOSOTRAS",
+  },
+
+  {
+    to: "/contactus",
+    children: "CONTÁCTANOS",
+  },
+
+  {
+    to: "/services",
+    children: "SERVICIOS",
+  },
+
+  {
+    to: "/gallery",
+    children: "GALERÍA",
+  },
+];
+
+const NavLink = ({ children, to }) => {
+  return (
+    <Link to={to} style={navLinkStyle} activeClassName="active">
+      {children}
+    </Link>
+  );
 };
 const TopNav = () => {
   return (
@@ -66,21 +102,9 @@ const TopNav = () => {
               style={{ width: "100%" }}
             >
               <Nav className="m-auto" style={{ gap: "15px" }}>
-                <Nav.Link href="/" style={navLinkStyle}>
-                  INICIO
-                </Nav.Link>
-                <Nav.Link href="/about" style={navLinkStyle}>
-                  SOBRE NOSOTRAS
-                </Nav.Link>
-                <Nav.Link href="/contactus" style={navLinkStyle}>
-                  CONTÁCTANOS
-                </Nav.Link>
-                <Nav.Link href="/services" style={navLinkStyle}>
-                  SERVICIOS
-                </Nav.Link>
-                <Nav.Link href="/gallery" style={navLinkStyle}>
-                  GALERÍA
-                </Nav.Link>
+                {menuLinks.map((item) => {
+                  return <NavLink to={item.to} children={item.children} />;
+                })}
               </Nav>
             </Navbar.Collapse>
           </Navbar>

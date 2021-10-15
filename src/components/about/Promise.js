@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
-  margin: 20px auto 30px;
+  margin: 20px auto 10px;
   align-content: center;
   align-items: center;
   row-gap: 30px;
@@ -17,10 +17,12 @@ const Container = styled.div`
     flex-flow: row wrap;
     justify-content: center;
     column-gap: 8%;
+    padding-bottom: 15px;
   }
 
   @media only screen and ${breakpoints.device.lg} {
     column-gap: 10%;
+    padding-bottom: 40px;
   }
 `;
 const Image = styled.img`
@@ -44,20 +46,13 @@ const PromiseContent = styled.div`
   }
 `;
 
-const h4Style = {
-  fontSize: "1.6rem",
-  fontWeight: "bold",
-  marginTop: "20px",
-  letterSpacing: "0.9px",
-};
-
 const Promise = () => {
   return (
     <Container>
       <Image src={perfectas_inauguracion} alt="Inauguracion" />
       <PromiseContent>
         <h5>NUESTRA PROMESA</h5>
-        <h4 style={h4Style}>Superior service, personalized attention</h4>
+        <h4 className="about">Superior service, personalized attention</h4>
         <p style={{ fontSize: "1.15rem" }}>
           We're proud to offer the highest quality, most unique merchandise on
           the market today. From our family to yours, we put lots of love and
