@@ -53,9 +53,13 @@ const GlobalCSS = createGlobalStyle`
   }
 
   .active {
-    background: #f6afb0;
-    
+    background: #f6afb0;    
   };
+
+  .link:hover {
+    color: white !important;
+    background: #ff5e61;
+  }
 
   a:hover {
     color: black;

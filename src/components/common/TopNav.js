@@ -81,7 +81,12 @@ const menuLinks = [
 
 const NavLink = ({ children, to }) => {
   return (
-    <Link to={to} style={navLinkStyle} activeClassName="active">
+    <Link
+      to={to}
+      style={navLinkStyle}
+      activeClassName="active"
+      className="link"
+    >
       {children}
     </Link>
   );
