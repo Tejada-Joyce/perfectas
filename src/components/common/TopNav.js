@@ -96,7 +96,7 @@ const TopNav = () => {
     <div>
       <Header>
         <Image src={name} alt="Perfectas" />
-        <Button primary as="a" href="/contactus">
+        <Button primary to="/contactus">
           Haz una Cita
         </Button>
         <Container>

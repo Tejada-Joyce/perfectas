@@ -1,7 +1,9 @@
 import styled, { css } from "styled-components";
 import breakpoints from "../styles/breakpoints";
+import React from "react";
+import { Link } from "gatsby";
 
-const Button = styled.button`
+const Button = styled((props) => <Link {...props} />)`
   background: #f6afb0;
   border: 2px solid #f6afb0;
   color: #000000;

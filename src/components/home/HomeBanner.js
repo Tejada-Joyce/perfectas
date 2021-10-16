@@ -47,7 +47,7 @@ const HomeBanner = () => {
       <Hero />
       <HeroStuff>
         <h3>Donde la Exclusividad Eres Tú</h3>
-        <Button secondary as="a" href="/contactus">
+        <Button secondary to="/contactus">
           Haz una Cita
         </Button>
       </HeroStuff>
