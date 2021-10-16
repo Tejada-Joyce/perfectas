@@ -79,9 +79,7 @@ const Services = () => {
           Our team work with clients on a very personal level to achieve their
           ideas about a positive image.
         </p>
-        <Button as="a" href="/services">
-          Explora Nuestros Servicios
-        </Button>
+        <Button to="/services">Explora Nuestros Servicios</Button>
       </ServicesIntro>
       <ImageContainer>
         <Image src={makeup} alt="Girl Makeup" roundedCircle />
