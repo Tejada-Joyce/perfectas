@@ -2,7 +2,35 @@ import banner_home_image_url from "../../images/spa-banner.jpg";
 import styled, { css } from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 import * as React from "react";
-import { BannerContainer, Hero } from "../../constants/constants-styled";
+
+const Container = styled.div`
+  height: 45vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 15px;
+
+  @media only screen and ${breakpoints.device.sm} {
+    height: 65vh;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  @media only screen and ${breakpoints.device.sm} {
+    height: 55vh;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+`;
+
+const Hero = styled.div`
+  background: url(${banner_home_image_url}) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+`;
 
 const HeroStuff = styled.div`
   position: absolute;
@@ -51,8 +79,8 @@ const MissionStatement = styled.h4`
 
 const Banner = () => {
   return (
-    <BannerContainer about>
-      <Hero url={banner_home_image_url} />
+    <Container>
+      <Hero />
       <HeroStuff>
         <h5>NUESTRA MISIÓN</h5>
         <MissionStatement>
@@ -60,7 +88,7 @@ const Banner = () => {
           provide.
         </MissionStatement>
       </HeroStuff>
-    </BannerContainer>
+    </Container>
   );
 };
 

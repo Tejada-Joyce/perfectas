@@ -49,4 +49,41 @@ const Button = styled((props) => <Link {...props} />)`
       }
     `}
 `;
-export { Button };
+
+const BannerContainer = styled.div`
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 15px;
+
+  @media only screen and ${breakpoints.device.sm} {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  ${(props) =>
+    props.home &&
+    css`
+      height: 65vh;
+    `}
+
+  ${(props) =>
+    props.about &&
+    css`
+      height: 45vh;
+      @media only screen and ${breakpoints.device.sm} {
+        height: 55vh;
+      }
+    `}
+`;
+
+const Hero = styled.div`
+  background: url(${(props) => props.url}) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+`;
+
+export { Button, BannerContainer, Hero };

@@ -2,29 +2,11 @@ import banner_home_image_url from "../../images/spa-banner.jpg";
 import styled, { css } from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 import * as React from "react";
-import { Button } from "../../constants/constants-styled";
-
-const Container = styled.div`
-  height: 65vh;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-  margin-top: 15px;
-
-  @media only screen and ${breakpoints.device.sm} {
-    margin-top: 10px;
-    margin-bottom: 40px;
-  }
-`;
-
-const Hero = styled.div`
-  background: url(${banner_home_image_url}) no-repeat center center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  padding: 40px;
-`;
+import {
+  Button,
+  BannerContainer,
+  Hero,
+} from "../../constants/constants-styled";
 
 const HeroStuff = styled.div`
   position: absolute;
@@ -43,15 +25,15 @@ const HeroStuff = styled.div`
 `;
 const HomeBanner = () => {
   return (
-    <Container>
-      <Hero />
+    <BannerContainer home>
+      <Hero url={banner_home_image_url} />
       <HeroStuff>
         <h3>Donde la Exclusividad Eres Tú</h3>
         <Button secondary to="/contactus">
           Haz una Cita
         </Button>
       </HeroStuff>
-    </Container>
+    </BannerContainer>
   );
 };
 
