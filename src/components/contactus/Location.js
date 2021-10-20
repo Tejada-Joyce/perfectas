@@ -77,6 +77,11 @@ const InfoContainer = styled.div`
   @media only screen and ${breakpoints.device.sm} {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media only screen and ${breakpoints.device.lg} {
+    margin: 0;
+    margin-left: 15%;
+  }
 `;
 
 const DataContainer = styled.div`
@@ -84,8 +89,10 @@ const DataContainer = styled.div`
   width: 85%;
 
   @media only screen and ${breakpoints.device.lg} {
-    margin: 0;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    width: 75%;
   }
 `;
 
@@ -100,7 +107,9 @@ const Location = () => {
     <Container>
       <SimpleMap location={location} zoomLevel={17} />
       <DataContainer>
-        <h4>Dirección y Horario de Atención</h4>
+        <h4 style={{ fontWeight: 600, letterSpacing: 1.2, lineHeight: 1.4 }}>
+          Dirección y Horario de Atención
+        </h4>
         <InfoContainer>
           <ul style={ulStyle}>
             {address.map((item) => {
