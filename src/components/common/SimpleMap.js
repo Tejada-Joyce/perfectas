@@ -6,10 +6,12 @@ import styled, { css } from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 
 const GoogleMap = styled.div`
-  width: 75%;
-  height: 60vh;
+  width: 85%;
+  height: 50vh;
   margin: 40px auto;
   @media only screen and ${breakpoints.device.lg} {
+    width: 75%;
+    height: 60vh;
   }
 `;
 

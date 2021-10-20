@@ -7,9 +7,9 @@ import { BannerContainer, Hero } from "../../constants/constants-styled";
 const HeroStuff = styled.div`
   position: absolute;
   top: 5%;
-  width: 90%;
   height: 90%;
   left: 5%;
+  width: 90%;
   text-align: center;
   align-content: center;
   background: white;
@@ -39,7 +39,7 @@ const MissionStatement = styled.h4`
   color: black;
   line-height: 1.2;
   display: block;
-  margin: 17px auto 0;
+  margin: 10px auto 0;
   width: 100%;
   letter-spacing: 1px;
 

@@ -60,12 +60,11 @@ const DayTime = ({ day, hours }) => {
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  background: #f6f7f9;
   align-items: center;
   justify-content: center;
 
   @media only screen and ${breakpoints.device.lg} {
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
   }
 `;
 
@@ -73,7 +72,7 @@ const InfoContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   font-size: 1rem;
-  margin-top: 30px;
+  margin: 30px auto 0;
 
   @media only screen and ${breakpoints.device.sm} {
     grid-template-columns: 1fr 1fr;

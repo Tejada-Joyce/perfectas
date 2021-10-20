@@ -42,7 +42,7 @@ const Container = styled.div`
 
   @media only screen and ${breakpoints.device.sm} {
     grid-area: 2/1/3/4;
-    margin-top: 0;
+    margin-top: 10px;
   }
 `;
 

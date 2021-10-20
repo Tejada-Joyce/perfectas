@@ -71,9 +71,24 @@ const BannerContainer = styled.div`
   ${(props) =>
     props.about &&
     css`
-      height: 45vh;
+      height: 40vh;
       @media only screen and ${breakpoints.device.sm} {
+        height: 50vh;
+      }
+      @media only screen and ${breakpoints.device.lg} {
         height: 55vh;
+      }
+    `}
+  
+    ${(props) =>
+    props.contact &&
+    css`
+      height: 25vh;
+      @media only screen and ${breakpoints.device.sm} {
+        height: 32vh;
+      }
+      @media only screen and ${breakpoints.device.lg} {
+        height: 45vh;
       }
     `}
 `;
