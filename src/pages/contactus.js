@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import GlobalCSS from "../styles/GlobalCSS.js";
 import Banner from "../components/contactus/Banner";
 import Location from "../components/contactus/Location";
+import ContactForm from "../components/contactus/ContactForm";
 
 const ContactusPage = () => {
   return (
@@ -12,6 +13,7 @@ const ContactusPage = () => {
       <Layout pageTitle="Contáctanos">
         <Banner />
         <Location />
+        <ContactForm />
       </Layout>
     </div>
   );

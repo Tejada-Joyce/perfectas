@@ -1,7 +1,7 @@
 import * as React from "react";
 import person1 from "../../images/person1.jpeg";
 import person2 from "../../images/person2.jpeg";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 
 const Container = styled.div`

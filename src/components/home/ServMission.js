@@ -1,5 +1,5 @@
 import makeup from "../../images/makeup.jpg";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 import * as React from "react";
 import { Button } from "../../constants/constants-styled";
