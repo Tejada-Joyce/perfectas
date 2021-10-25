@@ -10,8 +10,12 @@ const DataContainer = styled.div`
   margin: 20px auto;
   width: 85%;
 
-  @media only screen and ${breakpoints.device.lg} {
+  @media only screen and ${breakpoints.device.sm} {
     display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  @media only screen and ${breakpoints.device.lg} {
     grid-template-columns: 30% 70%;
     width: 75%;
   }
@@ -22,7 +26,6 @@ const Input = styled.input`
   width: 100%;
   font-size: 16px;
   padding: 0 16px;
-  // line-height: 1.2;
   margin: 15px 0;
 `;
 
@@ -38,18 +41,24 @@ const Button = styled.button`
   background: #f6afb0;
   border: 2px solid #f6afb0;
   color: #000000;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.5em;
   text-align: center;
   display: block;
   text-decoration: none;
   font-weight: 550;
-  font-size: 19px;
-  margin: 15px 0;
+  font-size: 18px;
+  margin: 30px 0 20px;
 
   &:hover {
     color: white;
     background: #ff5e61;
     border: 2px solid #ff5e61;
+  }
+`;
+
+const Form = styled.form`
+  @media only screen and ${breakpoints.device.sm} {
+    margin-left: 15%;
   }
 `;
 const ContactForm = () => {
@@ -104,7 +113,7 @@ const ContactForm = () => {
           por ti
         </p>
       </div>
-      <form onSubmit={submit} style={{ marginLeft: "15%" }}>
+      <Form onSubmit={submit}>
         <span style={{ color: "#f8a6a8", fontSize: 18 }}>{alert}</span>
         <Input
           type="text"
@@ -126,7 +135,7 @@ const ContactForm = () => {
           required
         ></TextArea>
         <Button>Enviar</Button>
-      </form>
+      </Form>
     </DataContainer>
   );
 };
