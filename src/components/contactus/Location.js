@@ -91,7 +91,6 @@ const DataContainer = styled.div`
   @media only screen and ${breakpoints.device.lg} {
     display: grid;
     grid-template-columns: 30% 70%;
-
     width: 75%;
   }
 `;
