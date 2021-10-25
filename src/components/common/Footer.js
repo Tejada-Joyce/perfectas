@@ -26,6 +26,7 @@ const ContactInfoContainer = styled.div`
   @media only screen and ${breakpoints.device.sm} {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 `;
 
