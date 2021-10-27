@@ -91,6 +91,18 @@ const BannerContainer = styled.div`
         height: 45vh;
       }
     `}
+
+    ${(props) =>
+    props.services &&
+    css`
+      height: 40vh;
+      @media only screen and ${breakpoints.device.sm} {
+        height: 35vh;
+      }
+      @media only screen and ${breakpoints.device.lg} {
+        height: 45vh;
+      }
+    `}
 `;
 
 const Hero = styled.div`

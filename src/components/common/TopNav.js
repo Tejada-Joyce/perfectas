@@ -51,6 +51,7 @@ const navLinkStyle = {
   letterSpacing: "1px",
   textAlign: "center",
   padding: "10px",
+  margin: "auto 0",
 };
 
 const menuLinks = [
