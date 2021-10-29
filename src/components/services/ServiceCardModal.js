@@ -1,99 +1,77 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Modal from "@material-ui/core/Modal";
-import CardMedia from "@material-ui/core/CardMedia";
-import Backdrop from "@material-ui/core/Backdrop";
-import Fade from "@material-ui/core/Fade";
-import { colors } from "../../constants/constants";
-import { Box } from "@material-ui/core";
-import Title from "../../shared/Title";
+import styled, { css } from "styled-components";
+import breakpoints from "../../styles/breakpoints";
 
-const useStyles = makeStyles((theme) => ({
-  modal: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  paper: {
-    backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-  },
-}));
+const Modal = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  // opacity: 1;
+  // transition: all 0.3s ease-in-out;
+  // pointer-events: none;
+  ${(props) =>
+    props.$show &&
+    css`
+      opacity: 1;
+      pointer-events: visible;
+      transform: translateY(0);
+    `}
+`;
 
-const styles = {
-  main: {
-    height: 500,
-    width: 1000,
-    borderColor: colors.BORDER_GRAY,
-    borderRadio: 5,
-    borderWeight: 10,
-    borderStyle: "solid",
-    display: "flex",
-    background: "white",
-    padding: 5,
-    alignItems: "center",
-  },
-  video: {},
-  content: {},
-};
+const ModalContent = styled.section`
+  width: 500px;
+  background-color: #fff;
+  // transform: translateY(-200px);
+  // transform: translateY(0);
+  // transition: all 0.3s ease-in-out;
+`;
+const ModalHeader = styled.div`
+  padding: 10px;
+`;
 
-function BigServiceCard({ src, title, content }) {
+const ModalBody = styled.div`
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+`;
+
+const ModalFooter = styled.div`
+  padding: 10px;
+`;
+
+function ServiceCardModal({ show, onClose, name, time, description }) {
+  if (!show) {
+    return null;
+  }
   return (
-    <div style={styles.main}>
-      <div style={{ width: 800, display: "flex", alignItems: "center" }}>
-        <CardMedia
-          image={src}
-          component="video"
-          height="430"
-          controls
-          controlsList="nodownload"
-          disablePictureInPicture
-        />
-      </div>
-      <Box
-        style={{
-          padding: 40,
-          width: 400,
-          height: 500,
-          display: "flex",
-          flexDirection: "column",
-        }}
+    <Modal>
+      {/* <Modal onClick={onClose} {...(show ? "$show" : "")}> */}
+      <ModalContent
+      // onClick={(e) => {
+      //   e.stopPropagation();
+      // }}
       >
-        <Title marginBottom={30}>{title}</Title>
-        <Box overflow="auto">{content}</Box>
-      </Box>
-    </div>
-  );
-}
-
-function ServiceCardModal({ open, setOpen, title, content, src }) {
-  const classes = useStyles();
-
-  return (
-    <div>
-      <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
-        className={classes.modal}
-        open={open}
-        onClose={() => setOpen(false)}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={open}>
-          <BigServiceCard
-            title={title}
-            content={content}
-            src={src}
-          ></BigServiceCard>
-        </Fade>
-      </Modal>
-    </div>
+        <ModalHeader>
+          <h5 style={{ margin: 0 }}>{name}</h5>
+        </ModalHeader>
+        <ModalBody>
+          <p>{time}</p>
+          <p style={{ textAlign: "left" }}>
+            <span style={{ fontWeight: "bold" }}>Descripción: </span>
+            {description}
+          </p>
+        </ModalBody>
+        <ModalFooter>
+          <button onClick={onClose}>close</button>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
   );
 }
 

@@ -1,5 +1,5 @@
 import banner_home_image_url from "../../images/spa-banner.jpg";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 import * as React from "react";
 import {
