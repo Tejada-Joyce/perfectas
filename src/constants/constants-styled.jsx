@@ -25,7 +25,7 @@ const Button = styled((props) => <Link {...props} />)`
   }
 
   ${(props) =>
-    props.primary &&
+    props.$primary &&
     css`
       display: none;
       color: black;
@@ -41,7 +41,7 @@ const Button = styled((props) => <Link {...props} />)`
     `}
 
   ${(props) =>
-    props.secondary &&
+    props.$secondary &&
     css`
       @media only screen and ${breakpoints.device.sm} {
         width: 80%;
@@ -63,13 +63,13 @@ const BannerContainer = styled.div`
   }
 
   ${(props) =>
-    props.home &&
+    props.$home &&
     css`
       height: 65vh;
     `}
 
   ${(props) =>
-    props.about &&
+    props.$about &&
     css`
       height: 40vh;
       @media only screen and ${breakpoints.device.sm} {
@@ -81,7 +81,7 @@ const BannerContainer = styled.div`
     `}
   
     ${(props) =>
-    props.contact &&
+    props.$contact &&
     css`
       height: 25vh;
       @media only screen and ${breakpoints.device.sm} {
@@ -93,7 +93,7 @@ const BannerContainer = styled.div`
     `}
 
     ${(props) =>
-    props.services &&
+    props.$services &&
     css`
       height: 40vh;
       @media only screen and ${breakpoints.device.sm} {

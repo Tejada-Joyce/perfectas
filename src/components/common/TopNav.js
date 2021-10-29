@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import breakpoints from "../../styles/breakpoints";
@@ -97,7 +97,7 @@ const TopNav = () => {
     <div>
       <Header>
         <Image src={name} alt="Perfectas" />
-        <Button primary to="/contactus">
+        <Button $primary to="/contactus">
           Haz una Cita
         </Button>
         <Container>
@@ -108,8 +108,14 @@ const TopNav = () => {
               style={{ width: "100%" }}
             >
               <Nav className="m-auto" style={{ gap: "15px" }}>
-                {menuLinks.map((item) => {
-                  return <NavLink to={item.to} children={item.children} />;
+                {menuLinks.map((item, index) => {
+                  return (
+                    <NavLink
+                      to={item.to}
+                      children={item.children}
+                      key={index}
+                    />
+                  );
                 })}
               </Nav>
             </Navbar.Collapse>

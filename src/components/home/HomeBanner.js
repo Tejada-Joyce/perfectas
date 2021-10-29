@@ -25,11 +25,11 @@ const HeroStuff = styled.div`
 `;
 const HomeBanner = () => {
   return (
-    <BannerContainer home>
+    <BannerContainer $home>
       <Hero url={banner_home_image_url} />
       <HeroStuff>
         <h3>Donde la Exclusividad Eres Tú</h3>
-        <Button secondary to="/contactus">
+        <Button $secondary to="/contactus">
           Haz una Cita
         </Button>
       </HeroStuff>

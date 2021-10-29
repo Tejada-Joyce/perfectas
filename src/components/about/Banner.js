@@ -51,7 +51,7 @@ const MissionStatement = styled.h4`
 
 const Banner = () => {
   return (
-    <BannerContainer about>
+    <BannerContainer $about>
       <Hero url={banner_home_image_url} />
       <HeroStuff>
         <h5>NUESTRA MISIÓN</h5>

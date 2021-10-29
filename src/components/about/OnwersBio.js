@@ -55,9 +55,9 @@ const OwnerBio = styled.div`
     width: 80%;
   }
 `;
-const Card = ({ src, biography, name, key }) => {
+const Card = ({ src, biography, name }) => {
   return (
-    <OwnerInfo key={key}>
+    <OwnerInfo>
       <Image src={src} alt={name} />
       <OwnerBio>
         <h4 className="about">{name}</h4>

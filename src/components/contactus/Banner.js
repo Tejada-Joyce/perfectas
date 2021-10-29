@@ -36,7 +36,7 @@ const HeroStuff = styled.div`
 
 const Banner = () => {
   return (
-    <BannerContainer contact>
+    <BannerContainer $contact>
       <Hero url={banner_home_image_url} />
       <HeroStuff>
         <h3 style={{ fontWeight: 600, letterSpacing: 1.2 }}>Contáctanos</h3>

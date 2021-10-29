@@ -104,8 +104,8 @@ const Location = () => {
         <h4>Dirección y Horario de Atención</h4>
         <InfoContainer>
           <ul style={ulStyle}>
-            {address.map((item) => {
-              return <li>{item}</li>;
+            {address.map((item, index) => {
+              return <li key={index}>{item}</li>;
             })}
             <li>
               <a href={"tel:'+51" + phoneNumber + "'"}>{phoneNumber}</a>
@@ -122,8 +122,8 @@ const Location = () => {
             </li>
           </ul>
           <ul style={ulStyle}>
-            {days.map((day) => {
-              return <DayTime day={day.day} hours={day.hours} />;
+            {days.map((day, index) => {
+              return <DayTime day={day.day} hours={day.hours} key={index} />;
             })}
           </ul>
         </InfoContainer>

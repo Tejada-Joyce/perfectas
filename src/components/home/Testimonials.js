@@ -50,9 +50,9 @@ const Review = styled.h3`
   }
 `;
 
-const Card = ({ src, content, name, key }) => {
+const Card = ({ src, content, name }) => {
   return (
-    <TestimonyContainer key={key}>
+    <TestimonyContainer>
       <Image src={src} alt="Customer" />
       <Review>{content}</Review>
       <h6>{name}</h6>
