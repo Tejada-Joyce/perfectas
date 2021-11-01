@@ -50,6 +50,41 @@ const Button = styled((props) => <Link {...props} />)`
     `}
 `;
 
+const ButtonNoLink = styled.button`
+  background: #f6afb0;
+  border: 2px solid #f6afb0;
+  color: #000000;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 18px;
+  margin: 30px 0 20px;
+
+  &:hover {
+    color: white;
+    background: #ff5e61;
+    border: 2px solid #ff5e61;
+  }
+
+  ${(props) =>
+    props.$services &&
+    css`
+      margin: auto;
+    `}
+
+  ${(props) =>
+    props.$close &&
+    css`
+      margin: auto;
+      padding: 1px 5px;
+      @media only screen and ${breakpoints.device.sm} {
+        margin: 0;
+      }
+    `}
+`;
+
 const BannerContainer = styled.div`
   width: 100%;
   overflow: hidden;
@@ -113,4 +148,4 @@ const Hero = styled.div`
   padding: 40px;
 `;
 
-export { Button, BannerContainer, Hero };
+export { Button, ButtonNoLink, BannerContainer, Hero };

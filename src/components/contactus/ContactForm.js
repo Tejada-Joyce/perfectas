@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
 import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
+import { ButtonNoLink } from "../../constants/constants-styled";
 
 init("user_ddDo2rUvFQmYLzA0broWp");
 
@@ -35,25 +36,6 @@ const TextArea = styled.textarea`
   min-height: 100px;
   padding: 1em;
   margin: 15px 0;
-`;
-
-const Button = styled.button`
-  background: #f6afb0;
-  border: 2px solid #f6afb0;
-  color: #000000;
-  padding: 0.5em 1.5em;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  font-weight: 550;
-  font-size: 18px;
-  margin: 30px 0 20px;
-
-  &:hover {
-    color: white;
-    background: #ff5e61;
-    border: 2px solid #ff5e61;
-  }
 `;
 
 const Form = styled.form`
@@ -134,7 +116,7 @@ const ContactForm = () => {
           onChange={(e) => setMessage(e.target.value)}
           required
         ></TextArea>
-        <Button>Enviar</Button>
+        <ButtonNoLink>Enviar</ButtonNoLink>
       </Form>
     </DataContainer>
   );

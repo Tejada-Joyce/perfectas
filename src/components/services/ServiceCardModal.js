@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled, { css } from "styled-components";
+import { ButtonNoLink } from "../../constants/constants-styled";
 import breakpoints from "../../styles/breakpoints";
 
 const Modal = styled.div`
@@ -26,6 +27,9 @@ const Modal = styled.div`
 
 const ModalContent = styled.section`
   width: 500px;
+  height: fit-content;
+  padding: 20px;
+  margin: auto;
   background-color: #fff;
   // transform: translateY(-200px);
   // transform: translateY(0);
@@ -33,6 +37,14 @@ const ModalContent = styled.section`
 `;
 const ModalHeader = styled.div`
   padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: end;
+  align-items: baseline;
+  @media only screen and ${breakpoints.device.sm} {
+    margin-left: 15%;
+    flex-direction: row;
+  }
 `;
 
 const ModalBody = styled.div`
@@ -45,20 +57,38 @@ const ModalFooter = styled.div`
   padding: 10px;
 `;
 
-function ServiceCardModal({ show, onClose, name, time, description }) {
+const ServiceCardModal = ({ show, onClose, name, time, description }) => {
   if (!show) {
     return null;
   }
+
+  // const closeOnEscapeKeyDown = (e) => {
+  //   if ((e.charCode || e.keyCode) === 27) {
+  //     onClose();
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   document.body.addEventListener("keydown", closeOnEscapeKeyDown);
+  //   return function cleanup() {
+  //     document.body.removeEventListener("keydown", closeOnEscapeKeyDown);
+  //   };
+  // }, []);
+
   return (
-    <Modal>
+    <Modal onClick={onClose}>
       {/* <Modal onClick={onClose} {...(show ? "$show" : "")}> */}
       <ModalContent
-      // onClick={(e) => {
-      //   e.stopPropagation();
-      // }}
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
       >
         <ModalHeader>
-          <h5 style={{ margin: 0 }}>{name}</h5>
+          <h5 style={{ margin: 0, flexGrow: 0.9 }}>{name}</h5>
+          {/* h5 in small margin margin: 20px auto 0; */}
+          <ButtonNoLink $close onClick={onClose}>
+            x
+          </ButtonNoLink>
         </ModalHeader>
         <ModalBody>
           <p>{time}</p>
@@ -67,12 +97,10 @@ function ServiceCardModal({ show, onClose, name, time, description }) {
             {description}
           </p>
         </ModalBody>
-        <ModalFooter>
-          <button onClick={onClose}>close</button>
-        </ModalFooter>
+        <ModalFooter></ModalFooter>
       </ModalContent>
     </Modal>
   );
-}
+};
 
 export default ServiceCardModal;
