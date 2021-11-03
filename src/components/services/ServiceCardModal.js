@@ -38,13 +38,7 @@ const ModalContent = styled.section`
 const ModalHeader = styled.div`
   padding: 10px;
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: end;
-  align-items: baseline;
-  @media only screen and ${breakpoints.device.sm} {
-    margin-left: 15%;
-    flex-direction: row;
-  }
+  flex-direction: column;
 `;
 
 const ModalBody = styled.div`
@@ -84,11 +78,10 @@ const ServiceCardModal = ({ show, onClose, name, time, description }) => {
         }}
       >
         <ModalHeader>
-          <h5 style={{ margin: 0, flexGrow: 0.9 }}>{name}</h5>
-          {/* h5 in small margin margin: 20px auto 0; */}
           <ButtonNoLink $close onClick={onClose}>
             x
           </ButtonNoLink>
+          <h5 style={{ margin: 0 }}>{name}</h5>
         </ModalHeader>
         <ModalBody>
           <p>{time}</p>

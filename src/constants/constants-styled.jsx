@@ -77,10 +77,10 @@ const ButtonNoLink = styled.button`
   ${(props) =>
     props.$close &&
     css`
-      margin: auto;
+      margin: 0 0 0 90%;
       padding: 1px 5px;
       @media only screen and ${breakpoints.device.sm} {
-        margin: 0;
+        margin-left: 93%;
       }
     `}
 `;
