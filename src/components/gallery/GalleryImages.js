@@ -18,13 +18,29 @@ const GalleryGrid = styled.ul`
   }
 `;
 
+const Comment = styled.p`
+  text-align: center;
+  margin: 0 10px 25px;
+  @media only screen and ${breakpoints.device.sm} {
+    font-size: 18px;
+  }
+  @media only screen and ${breakpoints.device.lg} {
+    font-size: 20px;
+  }
+`;
+
 const GalleryImages = () => {
   return (
-    <GalleryGrid>
-      {images.gallery_images.map((src, index) => {
-        return <ImageCard src={src} key={index} />;
-      })}
-    </GalleryGrid>
+    <div>
+      <GalleryGrid>
+        {images.gallery_images.map((src, index) => {
+          return <ImageCard src={src} key={index} />;
+        })}
+      </GalleryGrid>
+      <Comment>
+        ¡Visita nuestras redes sociales y encuentra más de nuestro trabajo!
+      </Comment>
+    </div>
   );
 };
 
