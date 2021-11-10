@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import breakpoints from "../../styles/breakpoints";
-import name from "../../images/name.jpg";
+import images from "../../images/index.js";
 import { Button } from "../../constants/constants-styled";
 import { Link } from "gatsby";
 
@@ -96,7 +96,7 @@ const TopNav = () => {
   return (
     <div>
       <Header>
-        <Image src={name} alt="Perfectas" />
+        <Image src={images.website_name} alt="Perfectas" />
         <Button $primary to="/contactus">
           Haz una Cita
         </Button>

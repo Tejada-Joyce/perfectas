@@ -5,11 +5,11 @@ import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 
 const Image = styled.img`
-  max-height: 220px;
+  max-height: 300px;
   padding: 8px;
   background-color: #f6f7f9;
   @media only screen and ${breakpoints.device.sm} {
-    max-height: 400px;
+    max-height: 500px;
   }
 `;
 

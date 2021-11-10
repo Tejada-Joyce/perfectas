@@ -1,4 +1,4 @@
-const banner_home_image_url = "../images/spa-banner.jpg";
+const images.banner_images[0] = "../images/spa-banner.jpg";
 // const events_image_url = "/images/banner/eventos-iglesia.png";
 // const prices_image_url = "/images/main/fondo-precios.jpg";
 
@@ -76,4 +76,4 @@ const banner_home_image_url = "../images/spa-banner.jpg";
 //   "/images/museums/museo-6.jpg",
 //   "/images/museums/museo-7.jpg",
 // ];
-export { banner_home_image_url };
+export { images.banner_images[0] };

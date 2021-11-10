@@ -1,9 +1,8 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 import { SocialMediaIconsReact } from "social-media-icons-react";
-import { SocialIcon } from "react-social-icons";
 
 const FooterContainer = styled.footer`
   background-color: #f6afb0;
@@ -15,7 +14,7 @@ const FooterContainer = styled.footer`
 `;
 
 const ContactInfoContainer = styled.div`
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #292929;
   text-align: center;
   margin: 0 auto;
   padding: 25px 0;
@@ -46,7 +45,7 @@ const Footer = () => {
       <ContactInfoContainer>
         <Link
           to="/contactus"
-          style={{ textDecoration: "none", color: "black" }}
+          style={{ textDecoration: "none", color: "#292929" }}
         >
           Contáctanos
         </Link>
@@ -54,7 +53,7 @@ const Footer = () => {
           <SocialMediaIconsReact
             borderColor="#f6afb0"
             icon="facebook"
-            iconColor="#ff9c9d"
+            iconColor="#292929"
             backgroundColor="white"
             url="https://www.facebook.com/PercfetasEA"
             size="35"
@@ -63,7 +62,7 @@ const Footer = () => {
           <SocialMediaIconsReact
             borderColor="#f6afb0"
             icon="instagram"
-            iconColor="#ff9c9d"
+            iconColor="#292929"
             backgroundColor="white"
             url="https://www.instagram.com/perfectas.esteticaavanzada/"
             size="35"
@@ -72,7 +71,7 @@ const Footer = () => {
           <SocialMediaIconsReact
             borderColor="#f6afb0"
             icon="messenger"
-            iconColor="#ff9c9d"
+            iconColor="#292929"
             backgroundColor="white"
             url="http://m.me/PercfetasEA"
             size="35"
@@ -81,7 +80,7 @@ const Footer = () => {
           <SocialMediaIconsReact
             borderColor="#f6afb0"
             icon="whatsapp"
-            iconColor="#ff9c9d"
+            iconColor="#292929"
             backgroundColor="white"
             url="http://m.me/PercfetasEA"
             size="35"
@@ -90,7 +89,7 @@ const Footer = () => {
           {/* <SocialIcon
             url="https://api.whatsapp.com/send?phone=51988583553&app=facebook&entry_point=page_cta&fbclid=IwAR02hRM0ARHt8TBHIThyERP6Haaqt3brvrKVVf_ih_4EQEYu_A3ZL_iG9wA"
             bgColor="white"
-            fgColor="#ff9c9d"
+            fgColor="#292929"
             style={{ height: 33, width: 33 }}
             target={"_blank"}
           /> */}

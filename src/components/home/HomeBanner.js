@@ -1,4 +1,4 @@
-import banner_home_image_url from "../../images/spa-banner.jpg";
+import images from "../../images/index.js";
 import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 import * as React from "react";
@@ -26,7 +26,7 @@ const HeroStuff = styled.div`
 const HomeBanner = () => {
   return (
     <BannerContainer $home>
-      <Hero url={banner_home_image_url} />
+      <Hero url={images.banner_images[0]} />
       <HeroStuff>
         <h3>Donde la Exclusividad Eres Tú</h3>
         <Button $secondary to="/contactus">

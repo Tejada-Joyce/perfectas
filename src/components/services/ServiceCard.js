@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { ButtonNoLink } from "../../constants/constants-styled";
-import breakpoints from "../../styles/breakpoints";
 import ServiceCardModal from "./ServiceCardModal";
 
 const ServiceDetails = styled.section`

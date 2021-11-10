@@ -2,7 +2,7 @@ import React from "react";
 import GoogleMapReact from "google-map-react";
 import { Icon } from "@iconify/react";
 import locationIcon from "@iconify/icons-mdi/map-marker";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 
 const GoogleMap = styled.div`

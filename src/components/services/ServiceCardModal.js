@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import styled, { css } from "styled-components";
 import { ButtonNoLink } from "../../constants/constants-styled";
-import breakpoints from "../../styles/breakpoints";
 
 const Modal = styled.div`
   position: fixed;

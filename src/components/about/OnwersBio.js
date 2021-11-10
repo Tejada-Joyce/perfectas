@@ -1,7 +1,6 @@
 import * as React from "react";
-import person1 from "../../images/person1.jpeg";
-import person2 from "../../images/person2.jpeg";
-import styled, { css } from "styled-components";
+import images from "../../images/index.js";
+import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 
 const Container = styled.div`
@@ -69,13 +68,13 @@ const Card = ({ src, biography, name }) => {
 
 const bios = [
   {
-    src: person1,
+    src: images.owners_images[0],
     biography:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non elit nulla. Maecenas dapibus vitae erat eu porta. Quisque malesuada consectetur tellus eu sodales. Integer blandit orci quis eros egestas faucibus sit amet quis quam.",
     name: "Mayita Alvarez",
   },
   {
-    src: person2,
+    src: images.owners_images[1],
     biography:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non elit nulla. Maecenas dapibus vitae erat eu porta. Quisque malesuada consectetur tellus eu sodales. Integer blandit orci quis eros egestas faucibus sit amet quis quam.",
     name: "Liz Surco",

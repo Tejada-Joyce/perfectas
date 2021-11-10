@@ -1,7 +1,6 @@
 import * as React from "react";
-import perfectas_inauguracion from "../../images/perfectas-inauguracion2.jpg";
-
-import styled, { css } from "styled-components";
+import images from "../../images/index.js";
+import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 
 const Container = styled.div`
@@ -49,7 +48,7 @@ const PromiseContent = styled.div`
 const Promise = () => {
   return (
     <Container>
-      <Image src={perfectas_inauguracion} alt="Inauguracion" />
+      <Image src={images.imauguration_image} alt="Inauguracion" />
       <PromiseContent>
         <h5>NUESTRA PROMESA</h5>
         <h4 className="about">Superior service, personalized attention</h4>

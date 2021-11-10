@@ -1,6 +1,5 @@
 import * as React from "react";
-import person1 from "../../images/person1.jpeg";
-import person2 from "../../images/person2.jpeg";
+import images from "../../images/index.js";
 import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 
@@ -62,13 +61,13 @@ const Card = ({ src, content, name }) => {
 
 const testimony = [
   {
-    src: person1,
+    src: images.testimonies_images[0],
     content:
       '"This is the best salon in town. I will never go somewhere else."',
     name: "ROSA PALACIOS",
   },
   {
-    src: person2,
+    src: images.testimonies_images[1],
     content:
       '"This is the best salon in town. I will never go somewhere else."',
     name: "ROSA PALACIOS",

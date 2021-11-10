@@ -1,4 +1,4 @@
-import makeup from "../../images/makeup.jpg";
+import images from "../../images/index.js";
 import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 import * as React from "react";
@@ -82,7 +82,11 @@ const Services = () => {
         <Button to="/services">Explora Nuestros Servicios</Button>
       </ServicesIntro>
       <ImageContainer>
-        <Image src={makeup} alt="Girl Makeup" roundedCircle />
+        <Image
+          src={images.home_service_image}
+          alt="Girl Makeup"
+          roundedCircle
+        />
       </ImageContainer>
     </Container>
   );

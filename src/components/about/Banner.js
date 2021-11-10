@@ -1,5 +1,5 @@
-import banner_home_image_url from "../../images/spa-banner.jpg";
-import styled, { css } from "styled-components";
+import images from "../../images/index.js";
+import styled from "styled-components";
 import breakpoints from "../../styles/breakpoints";
 import * as React from "react";
 import { BannerContainer, Hero } from "../../constants/constants-styled";
@@ -52,7 +52,7 @@ const MissionStatement = styled.h4`
 const Banner = () => {
   return (
     <BannerContainer $about>
-      <Hero url={banner_home_image_url} />
+      <Hero url={images.banner_images[0]} />
       <HeroStuff>
         <h5>NUESTRA MISIÓN</h5>
         <MissionStatement>
