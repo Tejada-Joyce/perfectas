@@ -4,28 +4,28 @@ import { ButtonNoLink } from "../../constants/constants-styled";
 import ServiceCardModal from "./ServiceCardModal";
 
 const ServiceDetails = styled.section`
-  padding: 0;
+  padding: 15px 0;
   width: 70%;
   margin: 0 auto;
 `;
 
-const ServiceCard = ({ name, time, description, button }) => {
-  const [show, setShow] = useState(false);
+const ServiceCard = ({ name, time, description }) => {
+  const [open, setOpen] = useState(false);
 
   return (
     <li>
       <ServiceDetails>
         <h5>{name}</h5>
         <p>{time}</p>
-        <ButtonNoLink $services onClick={() => setShow(true)}>
+        <ButtonNoLink $services onClick={() => setOpen(true)}>
           Más información ...
         </ButtonNoLink>
         <ServiceCardModal
           name={name}
           time={time}
           description={description}
-          onClose={() => setShow(false)}
-          show={show}
+          open={open}
+          setOpen={setOpen}
         />
       </ServiceDetails>
     </li>

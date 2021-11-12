@@ -11,7 +11,7 @@ const ServicesGrid = styled.ul`
   text-align: center;
   padding: 0;
   margin: 2rem 0;
-  row-gap: 1.5rem;
+  row-gap: 2.5rem;
   @media only screen and ${breakpoints.device.sm} {
     grid-template-columns: 1fr 1fr;
   }
