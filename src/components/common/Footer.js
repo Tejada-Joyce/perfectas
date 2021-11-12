@@ -89,7 +89,7 @@ const Footer = () => {
           {/* <SocialIcon
             url="https://api.whatsapp.com/send?phone=51988583553&app=facebook&entry_point=page_cta&fbclid=IwAR02hRM0ARHt8TBHIThyERP6Haaqt3brvrKVVf_ih_4EQEYu_A3ZL_iG9wA"
             bgColor="white"
-            fgColor="#292929"
+            fgColor="#f6afb0"
             style={{ height: 33, width: 33 }}
             target={"_blank"}
           /> */}
