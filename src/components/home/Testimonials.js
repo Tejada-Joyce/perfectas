@@ -52,7 +52,7 @@ const Review = styled.h3`
 const Card = ({ src, content, name }) => {
   return (
     <TestimonyContainer>
-      <Image src={src} alt="Customer" />
+      <Image src={src} alt="Customer" loading="lazy" />
       <Review>{content}</Review>
       <h6>{name}</h6>
     </TestimonyContainer>

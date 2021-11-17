@@ -85,6 +85,7 @@ const Services = () => {
         <Image
           src={images.home_service_image}
           alt="Girl Makeup"
+          loading="lazy"
           roundedCircle
         />
       </ImageContainer>

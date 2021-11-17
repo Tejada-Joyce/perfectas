@@ -25,6 +25,7 @@ const ImageCard = ({ src }) => {
       <Fragment>
         <NewImage
           src={src}
+          loading="lazy"
           onClick={() => {
             setOpen(true);
           }}

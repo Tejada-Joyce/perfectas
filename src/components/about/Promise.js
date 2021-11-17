@@ -48,7 +48,11 @@ const PromiseContent = styled.div`
 const Promise = () => {
   return (
     <Container>
-      <Image src={images.imauguration_image} alt="Inauguracion" />
+      <Image
+        src={images.imauguration_image}
+        alt="Inauguracion"
+        loading="lazy"
+      />
       <PromiseContent>
         <h5>NUESTRA PROMESA</h5>
         <h4 className="about">Superior service, personalized attention</h4>

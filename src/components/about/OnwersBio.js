@@ -57,7 +57,7 @@ const OwnerBio = styled.div`
 const Card = ({ src, biography, name }) => {
   return (
     <OwnerInfo>
-      <Image src={src} alt={name} />
+      <Image src={src} alt={name} loading="lazy" />
       <OwnerBio>
         <h4 className="about">{name}</h4>
         <p>{biography}</p>
