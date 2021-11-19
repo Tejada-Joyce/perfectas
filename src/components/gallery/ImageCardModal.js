@@ -27,6 +27,7 @@ const ImageCardModal = ({ open, setOpen, src }) => {
       open={open}
       onClose={() => setOpen(false)}
       closeAfterTransition
+      // disableScrollLock
     >
       <Fade in={open}>
         <Image src={src} alt={src} />
