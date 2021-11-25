@@ -15,11 +15,11 @@ const NotFoundInfo = () => {
     <div style={container}>
       <h3>Page not found</h3>
       <p style={paragraphStyles}>
-        Lo sentimos.{" "}
+        Lo sentimos{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
-        No pudimos encontrar lo que estabas buscando.
+        . No pudimos encontrar lo que estabas buscando.
       </p>
       <p>
         Por favor, regresa a la página de <a href="/">INICIO</a>
