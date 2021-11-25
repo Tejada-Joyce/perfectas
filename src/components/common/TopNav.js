@@ -102,7 +102,11 @@ const TopNav = () => {
         </Button>
         <Container>
           <Navbar expand="sm">
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" size="sm" />
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              size="sm"
+              style={{ borderStyle: "none" }}
+            />
             <Navbar.Collapse
               id="responsive-navbar-nav"
               style={{ width: "100%" }}
