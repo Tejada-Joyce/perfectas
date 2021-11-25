@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
 const container = {
   textAlign: "center",
@@ -7,7 +8,7 @@ const container = {
 };
 
 const paragraphStyles = {
-  marginBottom: 48,
+  marginBottom: 10,
 };
 
 const NotFoundInfo = () => {
@@ -15,11 +16,14 @@ const NotFoundInfo = () => {
     <div style={container}>
       <h3>Page not found</h3>
       <p style={paragraphStyles}>
-        Sorry{" "}
+        Lo lamentamos.{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
-        we couldn’t find what you were looking for.
+        No pudimos encontrar lo que estabas buscando.
+      </p>
+      <p>
+        Por favor, regresa a la página de <Link to="/">INICIO</Link>
       </p>
     </div>
   );
