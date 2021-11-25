@@ -69,12 +69,12 @@ const ContactForm = () => {
         setName("");
         setEmail("");
         setMessage("");
-        setAlert("Thank you for your message, we will be in touch in no time!");
+        setAlert("Gracias por tu mensaje. ¡Pronto te estaremos contactando!");
       } else {
-        setAlert("Please provide a valid email.");
+        setAlert("Por favor, proporciona un correo válido.");
       }
     } else {
-      setAlert("Please fill out all the required fields.");
+      setAlert("Por favor, llena todo los campos requeridos.");
     }
   };
 
