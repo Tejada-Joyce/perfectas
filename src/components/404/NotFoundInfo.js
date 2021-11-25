@@ -15,7 +15,7 @@ const NotFoundInfo = () => {
     <div style={container}>
       <h3>Page not found</h3>
       <p style={paragraphStyles}>
-        Lo lamentamos.{" "}
+        Lo sentimos.{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
