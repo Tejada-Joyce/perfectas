@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 
 const container = {
   textAlign: "center",
@@ -23,7 +22,7 @@ const NotFoundInfo = () => {
         No pudimos encontrar lo que estabas buscando.
       </p>
       <p>
-        Por favor, regresa a la página de <Link to="/">INICIO</Link>
+        Por favor, regresa a la página de <a href="/">INICIO</a>
       </p>
     </div>
   );
