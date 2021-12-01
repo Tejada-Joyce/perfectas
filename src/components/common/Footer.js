@@ -82,17 +82,10 @@ const Footer = () => {
             icon="whatsapp"
             iconColor="#292929"
             backgroundColor="white"
-            url="http://m.me/PercfetasEA"
+            url="https://api.whatsapp.com/send?phone=51988583553&app=facebook&entry_point=page_cta&fbclid=IwAR02hRM0ARHt8TBHIThyERP6Haaqt3brvrKVVf_ih_4EQEYu_A3ZL_iG9wA"
             size="35"
             roundness="50%"
           />
-          {/* <SocialIcon
-            url="https://api.whatsapp.com/send?phone=51988583553&app=facebook&entry_point=page_cta&fbclid=IwAR02hRM0ARHt8TBHIThyERP6Haaqt3brvrKVVf_ih_4EQEYu_A3ZL_iG9wA"
-            bgColor="white"
-            fgColor="#f6afb0"
-            style={{ height: 33, width: 33 }}
-            target={"_blank"}
-          /> */}
         </SocialMediaCont>
       </ContactInfoContainer>
       <div style={{ minWidth: "80%" }}>
