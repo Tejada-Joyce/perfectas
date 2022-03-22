@@ -8,7 +8,8 @@
 
 1.  **Information**
 
-    This website has been created using Gatsby/React.
+    This website has been created using Gatsby/React. This website works a salon template website.
+    The photos in About us and Gallery are subject to copyright.
 
 2.  **Developing**
 
