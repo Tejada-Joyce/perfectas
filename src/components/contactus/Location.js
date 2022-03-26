@@ -115,7 +115,7 @@ const Location = () => {
               return <li key={index}>{item}</li>;
             })}
             <li>
-              <a href={"tel:'+51" + phoneNumber + "'"}>{phoneNumber}</a>
+              <a href={"tel:'" + phoneNumber + "'"}>{phoneNumber}</a>
             </li>
             <li style={{ marginTop: 12 }}>
               <a
